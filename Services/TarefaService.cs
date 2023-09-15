@@ -15,41 +15,41 @@ public class TarefaService : ITarefaService
 
     public Tarefa AtualizarTarefa(int id, Tarefa tarefa)
     {
-        throw new NotImplementedException();
+        return _tarefaRepository.AtualizarTarefa(id, tarefa);
     }
 
     public Tarefa CriarTarefa(Tarefa tarefa)
     {
-        throw new NotImplementedException();
+        return _tarefaRepository.CriarTarefa(tarefa);
     }
 
     public Tarefa DeletarTarefa(int id)
     {
-        throw new NotImplementedException();
+        return _tarefaRepository.DeletarTarefa(id);
     }
 
     public Tarefa ObterTarefaPorId(int id)
     {
-        throw new NotImplementedException();
+        return _tarefaRepository.ObterTarefaPorId(id);
     }
 
     public Tarefa ObterTarefaPorTitulo(string titulo)
     {
-        throw new NotImplementedException();
+        return _tarefaRepository.ObterTarefaPorTitulo(titulo);
     }
 
     public IEnumerable<Tarefa> ObterTarefasPorData(DateTime data)
     {
-        throw new NotImplementedException();
+        return _tarefaRepository.ObterTarefasPorData(data);
     }
 
     public IEnumerable<Tarefa> ObterTarefasPorStatus(EnumStatusTarefa status)
     {
-        throw new NotImplementedException();
+        return _tarefaRepository.ObterTarefasPorStatus(status);
     }
 
     public IEnumerable<Tarefa> ObterTodasTarefas()
     {
-        throw new NotImplementedException();
+        return _tarefaRepository.ObterTodasTarefas();
     }
 }
